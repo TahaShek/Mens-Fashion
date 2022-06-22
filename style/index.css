@@ -1,0 +1,39 @@
+.nav-link{
+ color: black;
+ text-align: center;
+}
+.nav-link:hover{
+    color: red;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.home .home-banner-1,
+.home .home-banner-2{
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    min-height: 650px;
+    background-size: cover;
+    position: relative;
+}
+.home-banner-1{
+    background: url(../assests/images/slide1.jpg);
+}
+.home-banner-2{background: url(../assests/images/slide2.jpg);}
+.home-banner-text{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-110%,-50%);
+}
+.home-banner-text h1{
+    font-size: 6rem;
+}
+ /* .home .carousel-indicators [data-bs-target] {
+    color: yellow;
+    /* background-color: black; */
+    .carousel-control-prev-icon{
+        color: red;
+        /* background-color: red;    */
+    }
