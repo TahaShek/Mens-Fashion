@@ -1,39 +1,84 @@
+/* @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville'); */
+
 .nav-link{
- color: black;
- text-align: center;
+    color:rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 .nav-link:hover{
-    color: red;
-}
-.navbar-toggler:focus{
-    box-shadow: none;
+    color: white;
 }
 
-.home .home-banner-1,
-.home .home-banner-2{
-    background-repeat: no-repeat;
-    background-position: 90% center;
-    min-height: 650px;
+#thehero {
+width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),  url('../assests/hero_1.jpeg');
     background-size: cover;
-    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
 }
-.home-banner-1{
-    background: url(../assests/images/slide1.jpg);
+
+.the-inner {
+    /* background-color: rgba(256,256,256,0.8); */
+    width: 90vw;
+    padding: 1rem;
 }
-.home-banner-2{background: url(../assests/images/slide2.jpg);}
-.home-banner-text{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-110%,-50%);
+
+.the-inner h1{
+color:white;
+font-family: 'Libre Baskerville', serif;
+font-style: italic;
+font-weight: 400;
+line-height: 1.4;
+font-size: 5rem;
+
 }
-.home-banner-text h1{
-    font-size: 6rem;
+
+.the-inner p {
+color: #606061;
+text-align: center;
+font-size: 1.1rem;  
 }
- /* .home .carousel-indicators [data-bs-target] {
-    color: yellow;
-    /* background-color: black; */
-    .carousel-control-prev-icon{
-        color: red;
-        /* background-color: red;    */
-    }
+
+
+
+.the-inner a {
+color: #000000;
+}
+
+.the-inner .points p:before{
+  content: url(https://chrislanejones.com/wp-content/uploads/2018/10/littlesquarebullet.png);
+  padding: 0 1rem 0 0;
+}
+
+/* special thanks to https://codetheweb.blog/demo/full-image-hero/ */
+
+
+.the{
+    background-color: rgb(25,25,25);
+
+}
+.the h3{
+    color: white;
+font-style:italic;
+font-size: 2rem;
+
+}
+.the-p{
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    line-height: 1.5;
+}
+.the input button{
+    background-color: rgb(25,25,25);
+}
+.the input button:hover{
+    color: rgb(248,179,182);
+}
