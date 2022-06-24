@@ -193,4 +193,11 @@ font-size: 2rem;
     display: block;
     font-style: italic;
   }
-  
+  .events{
+    background-color: rgb(25,25,25);
+font-style: italic;
+  }
+
+  .event-card{background-color: rgb(25,25,25);
+
+  }
