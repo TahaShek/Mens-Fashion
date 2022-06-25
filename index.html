@@ -12,32 +12,24 @@
   </head>
   <body>
  
-    <nav class="bg-transparent  navbar-dark mt-2 fixed-top ">
-      
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link mt-2 active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mt-2" href="#">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mt-2" href="#">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mt-2" href="#">Reservation</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mt-2" href="#">About </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><button type="button" class=" btn px-5 btn-outline-dark" data-bs-toggle="modal" data-bs-target="#myModal">
-            Conatact us
-          </button>
-         </a>
-        </li>
-        
-      </ul>
+    <nav class="navbar navbar-expand-lg fixed-top  bg-transparent">
+      <div class="container">
+        <a class="navbar-brand" href="#">Brussels</a>
+        <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-warning"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto">
+            <a class="nav-link active mt-2" aria-current="page" href="#">Home</a>
+            <a class="nav-link mt-2" href="#">menu</a>
+            <a class="nav-link mt-2" href="#">gallery</a>
+            <a class="nav-link mt-2" href="#">Reservation</a>
+            <a class="nav-link " href="#"> <button type="button" class="btn h border-0 btn-outline-dark" data-bs-toggle="modal" data-bs-target="#myModal">
+              Conatct US
+            </button></a>
+          </div>
+        </div>
+      </div>
     </nav>
    
 
@@ -61,12 +53,14 @@
       
       </section>
 
-
-      
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Open modal
+      </button>
+    </div>
     
     <!-- The Modal -->
     <div class="modal" id="myModal">
-      <div class="modal-dialog modal-lg">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
     
           <!-- Modal Header -->
@@ -77,48 +71,68 @@
     
           <!-- Modal body -->
           <div class="modal-body">
-            <form class="row g-3">
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Name</label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-              <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Number </label>
-                <input type="number" class="form-control" id="inputPassword4">
-              </div>
-              <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-              </div>
-              <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-              </div>
-              <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
               </div>
               <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
-                  <option selected>Choose...</option>
+                <label for="validationCustom02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">State</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Choose...</option>
                   <option>...</option>
                 </select>
+                <div class="invalid-feedback">
+                  Please select a valid state.
+                </div>
               </div>
-              <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-              </div>
-              <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    Check me out
-                  </label>
+              <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Please provide a valid zip.
                 </div>
               </div>
               <div class="col-12">
-                <button type="submit" class="btn btn-primary">Conatct US </button>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
               </div>
             </form>
           </div>
@@ -131,6 +145,11 @@
         </div>
       </div>
     </div>
+    
+     
+    
+    
+    
 
 
 
@@ -250,7 +269,7 @@
         </div>
         <div class="row">
            <div class="col-md-4  col-sm-12">
-            <div class="card event-card border-0" style="width: 18rem;">
+            <div class="card event-card border-0" ">
               <img src="./assests/i.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class= "text-white card-title">Photoshoot On The Street</h5>
@@ -265,7 +284,7 @@
             </div>
            </div>
            <div class="col-md-4 ">
-            <div class="card event-card  border-0" style="width: 18rem;">
+            <div class="card event-card  border-0" ">
               <img src="./assests/2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class= "text-white card-title">Surfing at Philippines</h5>
@@ -280,8 +299,8 @@
             </div>
            </div>
            <div class="col-md-4 ">
-            <div class="card event-card border-0" style="width: 18rem;">
-              <img src="./assests/4-min.jpg" class="card-img-top" alt="...">
+            <div class="card event-card border-0" ">
+              <img src="./assests/4-min.jpg" class="card-img-top " alt="...">
               <div class="card-body">
                 <h5 class= "text-white card-title">Focus On Uderwater</h5>
                 <p class="the-p mt-4 p-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
